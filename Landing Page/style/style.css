@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins";
+    font-weight: light;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #9B06CE;
+    transition: 0.3s;
+}
+li{
+    list-style: none;
+}
+.title{
+    line-height: 10px;
+}
+span{
+    color: #9B06CE;
+}
+.cadin{
+    background-color: rgba(35, 35, 35);
+    border: 2px solid #9B06CE;
+    padding: 10px;
+    border-radius: 20px;
+}
+.cadin:hover{
+    background-color: #9B06CE;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    justify-content: space-between;
+}
+h2{
+    font-size: 40px;
+    line-height: 10px;
+}
+p{
+    font-weight: 200;
+}
+aside{
+    height: 400px;
+    width: 50%;
+}
+article{
+    width: 50%;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+input, button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+button{
+    background-color: #9B06CE;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+button:active{
+    color: black;
+}
+
+@media (max-width: 730px ) {
+  main{
+    flex-direction: column;
+  } 
+  article > img{
+   display: none;
+  } 
+  aside > h2 {
+    font-size: 30px;
+  }
+  aside{
+    width: 100%;
+    text-align:justify;
+  }
+  .cadin{
+    display: none;
+  }
+}
+@media (max-width: 788px){
+    aside > h2 {
+        font-size: 29px;
+    }
+    form{
+        margin: auto;
+    }
+}
